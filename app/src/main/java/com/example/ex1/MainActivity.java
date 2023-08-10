@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(TextUtils.isEmpty(nameInput.getText().toString())
                         || TextUtils.isEmpty(destinationInput.getText().toString())
-                        || TextUtils.isEmpty(descriptionInput.getText().toString())
+//                        || TextUtils.isEmpty(descriptionInput.getText().toString())
                         || TextUtils.isEmpty(dotControl.getText().toString())
                         || radioButton == "null"
                 ){
