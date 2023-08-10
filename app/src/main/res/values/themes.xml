@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Button.Blue" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <!--<item name="colorPrimary">#FFFFFF</item>-->
+
+    </style>
+
+    <style name="Theme.Ex1" parent="Button.Blue" />
+
+    <style name="navTextSize" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="navTextSize.active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">23dp</item>
+    </style>
+</resources>

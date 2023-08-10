@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Home</string>
+    <string name="destination">Destination<font color='@android:color/red' size='14'><sup>*</sup></font></string>
+    <string name="date_of_the_trip">Date of the Trip<font color='@android:color/red' size='14'><sup>*</sup></font></string>
+    <string name="dd_mm_yyyy">dd/mm/yyyy</string>
+    <string name="name_of_the_trip">Name of the Trip</string>
+    <string name="name">Name<font color='@android:color/red' size='14'><sup>*</sup></font></string>
+    <string name="add_to_database">Add to Database</string>
+    <string name="date">dd/mm/yyyy</string>
+    <string name="description_input">Description …</string>
+    <string name="description_view">Description</string>
+    <string name="rra">Require Risks Assessment<font color='@android:color/red' size='14'><sup>*</sup></font></string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="information_details">Information Details</string>
+    <string name="missing_information">Missing Information</string>
+    <string name="exclamation_mark_icon" />
+</resources>

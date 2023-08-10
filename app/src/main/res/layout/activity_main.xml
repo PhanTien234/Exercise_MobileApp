@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#1A1A1A"
+        app:titleTextColor="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#58667F"
+        android:fontFamily="@font/bahnschrift"
+        android:textStyle="bold"
+        android:text="@string/name"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input_border"
+        android:hint="@string/name_of_the_trip"
+        android:inputType="text"
+        android:fontFamily="@font/bahnschrift"
+        android:paddingLeft="15dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_text" />
+
+    <TextView
+        android:id="@+id/destination_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#58667F"
+        android:fontFamily="@font/bahnschrift"
+        android:textSize="20sp"
+        android:text="@string/destination"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_input" />
+
+    <EditText
+        android:id="@+id/destination_input"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_border"
+        android:paddingLeft="15dp"
+        android:paddingVertical="10dp"
+        android:hint="Destination"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destination_text" />
+
+    <TextView
+        android:id="@+id/dot_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#58667F"
+        android:fontFamily="@font/bahnschrift"
+        android:textSize="20sp"
+        android:text="@string/date_of_the_trip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destination_input" />
+
+    <TextView
+        android:id="@+id/dot_input"
+        android:layout_width="344dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#58667F"
+        android:fontFamily="@font/bahnschrift"
+        android:background="@drawable/input_border"
+        android:hint="@string/date"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dot_text" />
+
+    <TextView
+        android:id="@+id/rra_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#58667F"
+        android:fontFamily="@font/bahnschrift"
+        android:textSize="20sp"
+        android:text="@string/rra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dot_input" />
+
+    <RadioGroup
+        android:id="@+id/radio_rra"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:textColor="#58667F"
+        android:fontFamily="@font/bahnschrift"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rra_text">
+
+        <RadioButton
+            android:id="@+id/rb_option_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#58667F"
+            android:fontFamily="@font/bahnschrift"
+            android:text="@string/yes"
+            android:buttonTint="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="@+id/radio_group"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group" />
+
+
+        <RadioButton
+            android:id="@+id/rb_option_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#58667F"
+            android:fontFamily="@font/bahnschrift"
+            android:buttonTint="@color/white"
+            android:text="@string/no"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="@+id/rb_option_yes"
+            app:layout_constraintTop_toBottomOf="@+id/rg_text" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#58667F"
+        android:fontFamily="@font/bahnschrift"
+        android:textSize="20sp"
+        android:text="@string/description_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_rra" />
+
+    <EditText
+        android:id="@+id/description_input"
+        android:layout_width="342dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_border"
+        android:padding="15dp"
+        android:textColor="@android:color/black"
+        android:hint="@string/description_input"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_text" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="341dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/blue"
+        android:text="@string/add_to_database"
+        android:textColor="@android:color/white"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_input"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:labelVisibilityMode="labeled"
+        app:itemTextColor="@color/white"
+        app:itemTextAppearanceInactive="@style/navTextSize"
+        app:itemTextAppearanceActive="@style/navTextSize.active"
+        app:menu="@menu/nav_menu" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
